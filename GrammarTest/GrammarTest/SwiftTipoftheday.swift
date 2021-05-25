@@ -2704,3 +2704,34 @@ print(myName)
   strongSelf.someLabel.text = result
   */
  */
+
+//MARK: ----- 87 typealias -----
+/**
+ var testBlock: CommonSwift.block?
+ 
+ testBlock = { [weak self] in
+     if let strongSelf = self {
+         strongSelf.printTest()
+     }
+ }
+ 
+ sayHi { (value:String) in
+     print(value)
+ }
+ 
+ func printTest() {
+     print("print")
+ }
+ 
+ func sayHi(completion: ((String) -> Void)) {
+     completion("abc")
+     
+     if testBlock != nil {
+         testBlock!()
+     }
+ }
+ 
+ class CommonSwift {
+     typealias block = () -> Void
+ }
+ */
