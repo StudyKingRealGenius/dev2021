@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomIndicatorView" customModule="GrammarTest" customModuleProvider="target">
+            <connections>
+                <outlet property="baseImageView" destination="XWx-0Z-8nj" id="2EJ-lr-dhQ"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="Gkl-yc-Se2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtT-9i-2Y8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWx-0Z-8nj">
+                    <rect key="frame" x="194.5" y="432.5" width="25" height="31"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="4iI-9T-AcC"/>
+                        <constraint firstAttribute="height" constant="31" id="PTz-Xw-430"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WtT-9i-2Y8" secondAttribute="bottom" id="0rw-i2-NJr"/>
+                <constraint firstItem="WtT-9i-2Y8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="36g-by-ChD"/>
+                <constraint firstItem="WtT-9i-2Y8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3N5-OX-5a2"/>
+                <constraint firstItem="XWx-0Z-8nj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dAc-qo-2Ua"/>
+                <constraint firstItem="XWx-0Z-8nj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fzL-VO-ei9"/>
+                <constraint firstAttribute="trailing" secondItem="WtT-9i-2Y8" secondAttribute="trailing" id="hCL-c4-erN"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="130"/>
+        </view>
+    </objects>
+</document>
